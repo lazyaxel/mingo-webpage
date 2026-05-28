@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>STEMpily Racing Team</title>
-
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -15,24 +14,20 @@
         padding: 0;
         position: relative;
     }
-
     h1 {
         font-size: 400%;
         font-weight: bold;
         margin: 20px auto;
     }
-
     .title-line {
         width: 80%;
         height: 2px;
         background: yellow;
         margin: -10px auto 20px;
     }
-
     p {
         padding: 0 10px;
     }
-
     .team {
         display: flex;
         flex-wrap: wrap;
@@ -40,7 +35,6 @@
         gap: 20px;
         padding: 20px;
     }
-
     .card {
         background-color: black;
         color: rgb(234, 214, 0);
@@ -50,7 +44,6 @@
         border: 1px solid rgb(255, 0, 140);
         box-shadow: 0 0 10px rgb(255, 123, 0);
     }
-
     .card img {
         width: 100%;
         height: 220px;
@@ -59,7 +52,6 @@
         margin-bottom: 10px;
         border: 1px solid yellow;
     }
-
     /* typing animation for names */
     h2 {
         white-space: nowrap;
@@ -68,28 +60,23 @@
         width: 0;
         animation: typing 2.2s steps(20) forwards, hideCursor 0.1s 2.2s forwards;
     }
-
     @keyframes typing {
         from { width: 0; }
         to { width: 100%; }
     }
-
     @keyframes hideCursor {
         from { border-right-color: yellow; }
         to { border-right-color: transparent; }
     }
-
     .role {
         font-size: 14px;
         opacity: 0;
         animation: fadeRole 1.2s ease-in-out forwards;
     }
-
     @keyframes fadeRole {
         from { opacity: 0; transform: translateY(10px); }
         to { opacity: 1; transform: translateY(0); }
     }
-
     /* Next Page Button */
     .next-btn {
         margin: 30px 0;
@@ -103,12 +90,10 @@
         font-weight: bold;
         box-shadow: 0 0 8px yellow;
     }
-
     .next-btn:hover {
         background: rgb(255, 230, 0);
         box-shadow: 0 0 15px yellow;
     }
-
     /* Footer */
     footer {
         width: 100%;
@@ -119,7 +104,27 @@
         margin-top: 40px;
         border-top: 1px solid yellow;
     }
-
+    /* Bottom left button */
+    .bottom-left-btn {
+        position: fixed;
+        bottom: 40px;
+        left: 10px;
+        background: rgb(7, 7, 7);
+        color: rgb(254, 0, 0);
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 0 8px yellow;
+        text-decoration:whitesmoke;
+        z-index: 10;
+    }
+    .bottom-left-btn:hover {
+        background: rgb(255, 230, 0);
+        box-shadow: 0 0 15px yellow;
+    }
     /* top-right corner logo */
     body::before {
         content: "";
@@ -136,67 +141,53 @@
 </head>
 
 <body>
-
 <h1>STEMpily Racing Team</h1>
 <div class="title-line"></div>
-
 <p>
     STEMpily Racing Team is a group of passionate students dedicated to designing, 
     building, and racing high-performance vehicles.
 </p>
-
 <div class="team">
-
     <div class="card">
-        <img src="shreyas.jpg" alt="Shreyas">
+        <img src="shreyas.jpeg" alt="Shreyas">
         <h2>Shreyas</h2>
         <p class="role">Team Manager</p>
         <p style="color: rgb(112, 224, 162);">Controls chaos so the rest of us can pretend we know what we’re doing.</p>
     </div>
-
     <div class="card">
-        <img src="you.jpg" alt="You">
+        <img src="meme.jpeg" alt="You">
         <h2>Gandharv</h2>
         <p class="role">Designer</p>
         <p style="color: rgb(112, 224, 162);">Makes everything look like it belongs in a championship garage.</p>
     </div>
-
     <div class="card">
-        <img src="navyam.jpg" alt="Navyam">
+        <img src="Navyam.jpeg" alt="Navyam">
         <h2>Navyam</h2>
         <p class="role">Sponsorship / Marketing Lead</p>
         <p style="color: rgb(112, 224, 162);">Finds money, talks to people, somehow survives both.</p>
     </div>
-
     <div class="card">
-        <img src="anish.jpg" alt="Anish">
+        <img src="no idea.jpeg" alt="Anish">
         <h2>Anish</h2>
         <p class="role">Entertainment / Analytics Lead</p>
         <p style="color: rgb(112, 224, 162);">Does analytics and makes sure everyone has a good time.</p>
     </div>
-
     <div class="card">
-        <img src="sachit.jpg" alt="Sachit">
+        <img src="sachit.jpeg" alt="Sachit">
         <h2>Sachit</h2>
         <p class="role">Manufacturing Lead</p>
         <p style="color: rgb(112, 224, 162);">Turns random parts into something almost doesn’t break.</p>
     </div>
-
     <div class="card">
-        <img src="Jai.jpg" alt="Jai">
+        <img src="JAI.jpeg" alt="Jai">
         <h2>Jai</h2>
         <p class="role">Sponsorship Head</p>
         <p style="color: rgb(112, 224, 162);">Always on stand-by for help.</p>
     </div>
-
 </div>
-<button class="next-btn" onclick="window.open('video.html','_blank')" style="margin: 30px 0 30px 20px; float:right;">
-    Go to Video Page →
-</button>
-
+<a href="T-Shirt - BOLD (2).mp4" class="bottom-left-btn">Video</a>
 <footer>
     © 2024 STEMpily Racing Team • All Rights Reserved • Unauthorized copying will make us cry
 </footer>
-
 </body>
 </html>
